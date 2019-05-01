@@ -1,0 +1,15 @@
+{
+    "name": "momotmikhail/mvc",
+    "description": "Simple realization of MVC pattern.",
+    "authors": [
+        {
+            "name": "Momot Mikhail",
+            "email": "momotmikhaill@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "psr-4": {"app\\": "app"}
+    }
+}
