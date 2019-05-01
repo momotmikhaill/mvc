@@ -9,14 +9,18 @@ use app\core\Service;
 class ProductService extends Service
 {
 
-    public function getProduct(int $id) : ?string
+    public function getProduct($id) : ?string
     {
-        $arr = ["Prod 0", "Prod 1", "Prod 2"];
-
-        if (isset($arr[$id])){
-            return $arr[$id];
+        $products = array("Product 1", "Product 2", "Product 3");
+        if (isset($products[$id])){
+            return $products[$id];
         }
-
         return null;
+    }
+
+    public function getProducts() : array
+    {
+        $products = array("Product 1", "Product 2", "Product 3");
+        return $products;
     }
 }

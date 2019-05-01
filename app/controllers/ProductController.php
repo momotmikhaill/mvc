@@ -8,15 +8,17 @@ use app\core\Controller;
 
 class ProductController extends Controller
 {
-    public function productsAction() : void
+    public function productsAction()
     {
-        echo "Products";
+        $data = $this->service->getProducts();
+        var_dump($data);
     }
-
-    public function productAction() : void
+    public function productAction()
     {
-        echo $this->service->getProduct($this->params['id']);
-
+        $data = $this->service->getProduct($this->params['id']);
+        if (isset($data)){
+            echo $data;
+        }
     }
 
 }

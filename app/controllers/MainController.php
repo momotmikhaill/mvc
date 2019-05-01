@@ -8,19 +8,14 @@ use app\core\View;
 
 class MainController extends Controller
 {
-
     public function indexAction() : void
     {
-
         $this->view = new View('main', 'main');
 
         $data = [];
         $data['title'] = "Main";
 
-
         $this->view->render($data);
     }
-
-
 
 }
